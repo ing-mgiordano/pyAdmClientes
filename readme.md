@@ -20,7 +20,7 @@ Instalamos React-Router. En la terminal escribimos 'npm i react-router-dom'
 -------------------------------------------------------------------------------------
 
 En App.jsx creamos las rutas:
-<!--     <Route></Route>  // grupo de rutas(abre en un elemento y cierra en otro)
+    <Route></Route>  // grupo de rutas(abre en un elemento y cierra en otro)
     <Route />  // una sola ruta (abre y cierra en el mismo elemto)
 
 <BrowserRouter>
@@ -35,4 +35,4 @@ En App.jsx creamos las rutas:
           <Route path='editar/:id' element={<EditarCliente />} />
         </Route>
     </Routes>
-</BrowserRouter> -->
+</BrowserRouter>
