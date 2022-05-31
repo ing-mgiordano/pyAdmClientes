@@ -1,13 +1,23 @@
 import { useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-
+import Layout from './layout/Layout'
+import Inicio from './paginas/Inicio'
+import NuevoCliente from './paginas/NuevoCliente'
+import EditarCliente from './paginas/EditarCliente'
 
 function App() {
  
 
   return (
-    
-   <h1>adm</h1>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/clientes' element={<Layout />}>
+          <Route index element={<Inicio />} />
+          <Route path='nuevo' element={<NuevoCliente />} />
+          <Route path='editar/:id' element={<EditarCliente />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 

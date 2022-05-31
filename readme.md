@@ -16,3 +16,23 @@ Instalamos en la terminal 'npm i autoprefixer postcss tilwindcss' y dentro del a
 En la consola dejamos de correr npm con ctrl+c y lo volvemos a inicira con 'npm run dev'
 
 Instalamos React-Router. En la terminal escribimos 'npm i react-router-dom'
+
+-------------------------------------------------------------------------------------
+
+En App.jsx creamos las rutas:
+<!--     <Route></Route>  // grupo de rutas(abre en un elemento y cierra en otro)
+    <Route />  // una sola ruta (abre y cierra en el mismo elemto)
+
+<BrowserRouter>
+    <Routes>
+        <Route path='/' element={<IniciarSesion />}>
+          <Route index element={<LoginForm />} />
+        </Route>
+
+        <Route path='/clientes' element={<Layout />}>
+          <Route index element={<Inicio />} />
+          <Route path='nuevo' element={<NuevoCliente />} />
+          <Route path='editar/:id' element={<EditarCliente />} />
+        </Route>
+    </Routes>
+</BrowserRouter> -->
