@@ -1,28 +1,35 @@
-import { Outlet } from "react-router-dom"
+import { Outlet, Link, useLocation } from "react-router-dom"
 
 const Layout = () => {
+
+  const location = useLocation()
+  //console.log(location)
+
+  const urlActual = location.pathname  // lo puedo visualizar en el conole.log
+
+
   return (
-    <div className="md:flex md:min-h-screen">
-        <div className="md:w-1/4 bg-blue-900 px-5 py-10">
-          <h2 className="text-4xl font-black text-center text-white">CMR - Clientes</h2>
+    <div className='md:flex md:min-h-screen'>
+        <div className='md:w-1/4 bg-blue-900 px-5 py-10'>
+          <h2 className='text-4xl font-black text-center text-white'>CMR - Clientes</h2>
           
-          <nav className="mt-10">
+          <nav className='mt-10'>
 
-            <a 
-              className="text-white text-2xl block mt-2 hover:text-blue-300"
-              href="/clientes"
-            >Clientes</a>
+            <Link 
+              className={`${urlActual === '/clientes' ? 'text-blue-400 border-l px-2' : 'text-white'} text-2xl block mt-2 hover:text-cyan-500`}
+              to='/clientes'
+            >Clientes</Link>
 
 
-            <a 
-              className="text-white text-2xl block mt-2 hover:text-blue-300"
-              href="/clientes/nuevo"
-            >Nuevo Cliente</a>
+            <Link 
+              className={`${urlActual === '/clientes/nuevo' ? 'text-blue-400 border-l px-2' : 'text-white'} text-2xl block mt-2 hover:text-cyan-500`}
+              to='/clientes/nuevo'
+            >Nuevo Cliente</Link>
 
           </nav>
         </div>
 
-        <div className="md:w-3/4 bg-amber-500">
+        <div className='md:w-3/4 p-10 md:h-screen overflow-scroll'>
           <Outlet />
         </div>
 
