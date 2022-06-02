@@ -66,4 +66,4 @@ Spinner: https://tobiasahlin.com/spinkit/
 
 creamos un componente spinner.jsx, pegamos el codigo html ( debemos cambiar class por className para que funcione)
 
-creamos una carpeta styles y un archivo Spinner.css y pegamos el codigo css. Importo el archivo css a Spinner.jsx
+creamos una carpeta styles y un archivo Spinner.css y pegamos el codigo css. Importo el archivo css a Spinner.jsx. Por ultimo importo Spinner.jsx a VerCliente
