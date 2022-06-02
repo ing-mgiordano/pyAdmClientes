@@ -42,3 +42,5 @@ useLocation: lo importamos de react-router-dom. Sirve para saber donde esta el c
 
 Formulario: utilizamos Formik como libreria y Yup para validaciones.
 Instalamos formik y yup: en la terminal escribimos 'npm i formik yup'
+
+documentacion de yup: https://github.com/ing-mgiordano/yup
