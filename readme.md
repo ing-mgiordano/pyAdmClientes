@@ -42,6 +42,8 @@ useLocation: lo importamos de react-router-dom. Sirve para saber donde esta el c
 
 useNavigate: lo importamos de react-router-dom. Hook que sirve para direccionar al cliente a una cierta direccion.
 
+useParam: lo importamos de react-router-dom. Hook que sirve para traer el parametro que se encuentra en la direccion web: en este caso http://localhost:3000/clientes/1 nos retorna el id:1
+
 Formulario: utilizamos Formik como libreria y Yup para validaciones.
 Instalamos formik y yup: en la terminal escribimos 'npm i formik yup'
 
@@ -57,4 +59,11 @@ en la terminal ejecutamos el codigo json-server --watch db.json ---port 4000
 el watch sirve para que identifique cada vez q se genere un cambio en el archivo
 port 4000 para que se ejecute en el puerto 4000
 
-json-server es una exelente forma de que puedas avanzar en un proyecto si en la empresa no te pasan los endpoint de backend
+json-server es una exelente forma de que puedas avanzar en un proyecto si en la empresa no te pasan los endpoint de backend.
+
+
+Spinner: https://tobiasahlin.com/spinkit/
+
+creamos un componente spinner.jsx, pegamos el codigo html ( debemos cambiar class por className para que funcione)
+
+creamos una carpeta styles y un archivo Spinner.css y pegamos el codigo css. Importo el archivo css a Spinner.jsx
