@@ -40,6 +40,8 @@ Cuando usamos react-router-dom las etiquetas 'a' para los enlaces se remplazan p
 
 useLocation: lo importamos de react-router-dom. Sirve para saber donde esta el cliente situado en la pagina y generamos un clase q muentre al cliente en que parte de la pagina se encuentra.
 
+useNavigate: lo importamos de react-router-dom. Hook que sirve para direccionar al cliente a una cierta direccion.
+
 Formulario: utilizamos Formik como libreria y Yup para validaciones.
 Instalamos formik y yup: en la terminal escribimos 'npm i formik yup'
 
