@@ -1,0 +1,36 @@
+{
+  "clientes": [
+    {
+      "nombre": "Miguel",
+      "empresa": "Renault Argentina ",
+      "email": "walsirg@gmail.com",
+      "telefono": "678733257",
+      "notas": "ssd",
+      "id": 1
+    },
+    {
+      "nombre": "Miguel",
+      "empresa": "Renault Argentina ",
+      "email": "walsirg@gmail.com",
+      "telefono": "678733257",
+      "notas": "ssd",
+      "id": 2
+    },
+    {
+      "nombre": "Miguel",
+      "empresa": "Renault Argentina ",
+      "email": "walsirg@gmail.com",
+      "telefono": "678733257",
+      "notas": "ssd",
+      "id": 3
+    },
+    {
+      "nombre": "HOLA",
+      "empresa": "CIMo CITeQ",
+      "email": "Ing.mgiordano@gmail.com",
+      "telefono": "678733257",
+      "notas": "",
+      "id": 4
+    }
+  ]
+}

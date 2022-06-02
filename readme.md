@@ -44,3 +44,15 @@ Formulario: utilizamos Formik como libreria y Yup para validaciones.
 Instalamos formik y yup: en la terminal escribimos 'npm i formik yup'
 
 documentacion de yup: https://github.com/ing-mgiordano/yup
+
+Instalamos JSON-Server para crear una REST API: https://www.npmjs.com/package/json-server
+
+ejecutamos powershell como administrador y pegamos: npm install -g json-server
+
+en la carpeta del py creamos el archivo db.json
+en la terminal ejecutamos el codigo json-server --watch db.json ---port 4000
+
+el watch sirve para que identifique cada vez q se genere un cambio en el archivo
+port 4000 para que se ejecute en el puerto 4000
+
+json-server es una exelente forma de que puedas avanzar en un proyecto si en la empresa no te pasan los endpoint de backend

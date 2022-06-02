@@ -21,8 +21,24 @@ const Formulario = () => {
         //notas: no es obligatorio, ni necesitan algun tipo de validacion
     })
 
-    const handleSubmit = (values) => {
-        console.log(values)
+    const handleSubmit = async (values) => {
+        try {
+            const url = 'http://localhost:4000/clientes'
+
+            const respuesta = await fetch(url, {
+               method: 'POST',
+               body: JSON.stringify(values),
+               headers: {
+                    'Content-Type': 'application/json'   // ver pagina de json-server
+               }
+            })
+            console.log(respuesta)  
+            const resultado = await respuesta.json()
+            console.log(resultado)
+
+        } catch (error) {
+           console.log(error)
+        }
     }
     return (
         <div className='bg-white mt-10 px-5 py-10 rounded-xl shadow-xl md:w-3/4 mx-auto'>
@@ -39,8 +55,10 @@ const Formulario = () => {
                     telefono: '',
                     notas: ''
                 } }
-                onSubmit={ (values) => {
-                    handleSubmit(values)
+                onSubmit={ async (values, {resetForm}) => {
+                    await handleSubmit(values)
+
+                    resetForm()
                 } }
                 validationSchema={nuevoClienteSchema}
             >
