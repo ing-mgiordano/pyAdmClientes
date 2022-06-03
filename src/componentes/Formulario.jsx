@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import * as Yup from 'yup'
 import Alerta from './Alerta'
 
-const Formulario = () => {
+const Formulario = ({cliente}) => {
 
     const navigate = useNavigate()
 
@@ -50,16 +50,17 @@ const Formulario = () => {
         
             <h1 
                 className='text-gray-600 font-bold text-xl uppercase text-center'
-            >Agregar Cliente</h1>
+            >{cliente?.nombre ? 'Editar Cliente' : 'Agregar Cliente'}</h1>
 
             <Formik
                 initialValues={ {
-                    nombre: '',
-                    empresa: '',
-                    email: '',
-                    telefono: '',
-                    notas: ''
+                    nombre: cliente?.nombre ?? '',     //si existe cliente.nombre toma ese valor sino un string vacio.Es igual a un ternario(cliente.nombre ? cliente.nombre : '')
+                    empresa: cliente?.empresa ?? '',
+                    email: cliente?.email ?? '',
+                    telefono: cliente?.telefono ?? '',
+                    notas: cliente?.notas ?? ''
                 } }
+                enableReinitialize={true} // me sirve para traer los datos de clientes y editarlos. Tengo que declarar al ultimo del archivo los .defaultProps
                 onSubmit={ async (values, {resetForm}) => {
                     await handleSubmit(values)
 
@@ -154,7 +155,7 @@ const Formulario = () => {
 
                         <input 
                             type='submit' 
-                            value='Agregar Cliente'
+                            value={cliente?.nombre ? 'Editar Cliente' : 'Agregar Cliente'}
                             className='mt-5 w-full bg-blue-800 p-3 text-white uppercase font-bold text-lg rounded-xl shadow-xl'
                         />
                     </Form>
@@ -162,6 +163,10 @@ const Formulario = () => {
             </Formik>
         </div>
     )
+}
+
+Formulario.defaultProps = {
+    clientes: {}
 }
 
 export default Formulario

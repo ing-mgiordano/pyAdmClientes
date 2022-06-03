@@ -1,7 +1,7 @@
 {
   "clientes": [
     {
-      "nombre": "Miguel",
+      "nombre": "Jose",
       "empresa": "Renault Argentina ",
       "email": "walsirg@gmail.com",
       "telefono": "678733257",
@@ -12,12 +12,12 @@
       "nombre": "Miguel",
       "empresa": "Renault Argentina ",
       "email": "walsirg@gmail.com",
-      "telefono": "678733257",
+      "telefono": "",
       "notas": "ssd",
       "id": 2
     },
     {
-      "nombre": "Miguel",
+      "nombre": "Richar",
       "empresa": "Renault Argentina ",
       "email": "walsirg@gmail.com",
       "telefono": "678733257",
@@ -39,6 +39,14 @@
       "telefono": "343134343",
       "notas": "",
       "id": 5
+    },
+    {
+      "nombre": "Teri",
+      "empresa": "Ulanito SA",
+      "email": "teri@gmail.com",
+      "telefono": "",
+      "notas": "Vende droga",
+      "id": 6
     }
   ]
 }
