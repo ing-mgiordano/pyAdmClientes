@@ -1,68 +1,12 @@
 {
   "clientes": [
     {
-      "nombre": "Jose actualizado",
-      "empresa": "Renault Argentina ",
-      "email": "walsirg@gmail.com",
-      "telefono": "678733257",
-      "notas": "ssd",
-      "id": 1
-    },
-    {
-      "nombre": "Miguel",
-      "empresa": "Renault Argentina ",
-      "email": "walsirg@gmail.com",
-      "telefono": "",
-      "notas": "ssd",
-      "id": 2
-    },
-    {
-      "nombre": "Richar",
-      "empresa": "Renault Argentina ",
-      "email": "walsirg@gmail.com",
-      "telefono": "678733257",
-      "notas": "ssd",
-      "id": 3
-    },
-    {
-      "nombre": "HOLA",
-      "empresa": "CIMo CITeQ",
-      "email": "Ing.mgiordano@gmail.com",
-      "telefono": "678733257",
-      "notas": "vende coca",
-      "id": 4
-    },
-    {
       "nombre": "pepita",
       "empresa": "la droga de pepita",
       "email": "pepita@tudroga.com",
       "telefono": "343134343",
       "notas": "",
       "id": 5
-    },
-    {
-      "nombre": "Teri",
-      "empresa": "Ulanito SA",
-      "email": "teri@gmail.com",
-      "telefono": "",
-      "notas": "Vende droga",
-      "id": 6
-    },
-    {
-      "nombre": "juancit",
-      "empresa": "j",
-      "email": "juan@gmail.com",
-      "telefono": "23",
-      "notas": "23",
-      "id": 7
-    },
-    {
-      "nombre": "yup",
-      "empresa": "Renault",
-      "email": "Ing.mgiordano@gmail.com",
-      "telefono": "678733257",
-      "notas": "ñññññ",
-      "id": 8
     }
   ]
 }

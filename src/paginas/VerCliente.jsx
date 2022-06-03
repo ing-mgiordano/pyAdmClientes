@@ -21,9 +21,8 @@ const VerCliente = () => {
             } catch (error) {
                 console.log(error)
             }
-            setTimeout(() => {
-                setCargando(!cargando) 
-            }, 3000);
+            
+            setCargando(!cargando) 
         }
         obtenerClienteAPI()
     }, [])
