@@ -11,9 +11,9 @@ const Cliente = ({cliente, handleEliminar}) => {
       <td className='p-3'>{nombre}</td>
       <td className='p-3'>
             <p><span className='text-gray-800 uppercase font-bold'>Email: </span>{email}</p>
-            {telefono ? (
+            {telefono && (
               <p><span className='text-gray-800 uppercase font-bold'>Tel: </span>{telefono}</p>
-            ) : null}
+            )}
       </td>
       <td className='p-3'>{empresa}</td>
       <td className='p-3'>
