@@ -27,18 +27,33 @@ const Formulario = ({cliente, cargando}) => {
 
     const handleSubmit = async (values) => {
         try {
-            const url = 'http://localhost:4000/clientes'
-
-            const respuesta = await fetch(url, {
-               method: 'POST',
-               body: JSON.stringify(values),
-               headers: {
-                    'Content-Type': 'application/json'   // ver pagina de json-server
-               }
-            })
-            console.log(respuesta)  
+            let respuesta
+            if(cliente.id) {
+                //Editando registro
+                const url = `http://localhost:4000/clientes/${cliente.id}`
+    
+                respuesta = await fetch(url, {
+                   method: 'PUT',
+                   body: JSON.stringify(values),
+                   headers: {
+                        'Content-Type': 'application/json'   // ver pagina de json-server
+                   }
+                })
+            } else {
+                //Nuevo registro
+                const url = 'http://localhost:4000/clientes'
+    
+                respuesta = await fetch(url, {
+                   method: 'POST',
+                   body: JSON.stringify(values),
+                   headers: {
+                        'Content-Type': 'application/json'   // ver pagina de json-server
+                   }
+                })
+            }
+            //console.log(respuesta)  
             const resultado = await respuesta.json()
-            console.log(resultado)
+            //console.log(resultado)
 
             navigate('/clientes')
 
@@ -60,17 +75,17 @@ const Formulario = ({cliente, cargando}) => {
                         empresa: cliente?.empresa ?? '',
                         email: cliente?.email ?? '',
                         telefono: cliente?.telefono ?? '',
-                        notas: cliente?.notas ?? ''
-                    } }
+                        notas: cliente?.notas ?? '',
+                    }}
                     enableReinitialize={true} // me sirve para traer los datos de clientes y editarlos. Tengo que declarar al ultimo del archivo los .defaultProps
                     onSubmit={ async (values, {resetForm}) => {
                         await handleSubmit(values)
 
                         resetForm()
-                    } }
+                    }}
                     validationSchema={nuevoClienteSchema}
                 >
-                    { ({errors, touched}) => {  //data = es una variable que contiene info sobre formik
+                    {({errors, touched}) => {  //data = es una variable que contiene info sobre formik
                         //console.log(touched)
                         return (
                         <Form
@@ -169,7 +184,7 @@ const Formulario = ({cliente, cargando}) => {
 }
 
 Formulario.defaultProps = {
-    clientes: {},
+    cliente: {},
     cargando: false
 }
 

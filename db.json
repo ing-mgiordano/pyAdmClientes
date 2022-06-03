@@ -1,7 +1,7 @@
 {
   "clientes": [
     {
-      "nombre": "Jose",
+      "nombre": "Jose actualizado",
       "empresa": "Renault Argentina ",
       "email": "walsirg@gmail.com",
       "telefono": "678733257",
@@ -29,7 +29,7 @@
       "empresa": "CIMo CITeQ",
       "email": "Ing.mgiordano@gmail.com",
       "telefono": "678733257",
-      "notas": "",
+      "notas": "vende coca",
       "id": 4
     },
     {
@@ -47,6 +47,22 @@
       "telefono": "",
       "notas": "Vende droga",
       "id": 6
+    },
+    {
+      "nombre": "juancit",
+      "empresa": "j",
+      "email": "juan@gmail.com",
+      "telefono": "23",
+      "notas": "23",
+      "id": 7
+    },
+    {
+      "nombre": "yup",
+      "empresa": "Renault",
+      "email": "Ing.mgiordano@gmail.com",
+      "telefono": "678733257",
+      "notas": "ñññññ",
+      "id": 8
     }
   ]
 }
