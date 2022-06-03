@@ -1,20 +1,20 @@
 {
   "clientes": [
     {
-      "nombre": "pepita",
-      "empresa": "la droga de pepita",
-      "email": "pepita@tudroga.com",
-      "telefono": "343134343",
-      "notas": "",
-      "id": 5
+      "nombre": "Jose Perez",
+      "empresa": "Perez S.A.",
+      "email": "perez@gmail.com",
+      "telefono": "68789855",
+      "notas": "Requiere un nuevo servidor",
+      "id": 1
     },
     {
-      "nombre": "hola",
-      "empresa": "Renault",
-      "email": "walsirg@gmail.com",
-      "telefono": "",
-      "notas": "",
-      "id": 6
+      "nombre": "Sandra Forta",
+      "empresa": "CodigoConSandra",
+      "email": "codesan@it.com",
+      "telefono": "78785564",
+      "notas": "Presupuesto de servicio",
+      "id": 2
     }
   ]
 }
